@@ -1,7 +1,7 @@
 import React from "react";
 
-import { Box } from "../scanning/_components/Box";
-import { FooterBox } from "../scanning/_components/FooterBox";
+// import { Box } from "../scanning/_components/Box";
+// import { FooterBox } from "../scanning/_components/FooterBox";
 import { Header } from "./_components/Header";
 import Boxes from "./_components/Box";
 import { ReturnComplete } from "./_components/ReturnComplete";
@@ -17,7 +17,7 @@ const Page: React.FC = () => {
 
       <section className="p-6 md:p-12 max-w-4xl mx-auto flex-grow">
         <h2 className="text-center text-2xl md:text-4xl font-extrabold mb-6">
-          Please Drop Your Books
+          Book Returned Successfully!
         </h2>
         <Boxes/>
         <ReturnComplete />

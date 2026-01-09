@@ -7,7 +7,7 @@ export const BoxScanning: React.FC = () => {
                  bg-[linear-gradient(135deg,_rgb(44,62,80)_0%,_rgb(52,73,94)_100%)] overflow-hidden"
     >
       <div className="text-6xl mb-8 animate-bounce">
-        ⬇️
+      📡
       </div>
 
      

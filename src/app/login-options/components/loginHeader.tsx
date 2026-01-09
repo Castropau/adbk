@@ -19,7 +19,7 @@ export const LoginHeader: React.FC = () => {
            <div className="flex items-center gap-3 md:gap-6 text-sm md:text-base">
   <button className="flex items-center border-2 border-white px-3 py-1 rounded-md 
                      hover:bg-white hover:text-green-600 transition-all duration-300 ease-in-out">
-    <span className="bg-[rgba(255,255,255,0.2)] px-2 py-1 rounded-md mr-2 text-base">❓</span>
+    <span className=" px-2 py-1 rounded-md mr-2 text-base">❓</span>
     Help
   </button>
 </div>

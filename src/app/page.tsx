@@ -13,7 +13,9 @@ const BookReturnPage: React.FC = () => {
       <Header />
       {/* <StatusBar /> */}
 
-      <section className="p-6 md:p-12 max-w-4xl mx-auto">
+      {/* <section className="p-6 md:p-12 max-w-4xl mx-auto"> */}
+      <section className="p-6 md:p-12 max-w-6xl mx-auto">
+
         <h2 className="text-center text-2xl md:text-4xl font-extrabold mb-10">
           Welcome! <br />
           Return Your Books Anytime
