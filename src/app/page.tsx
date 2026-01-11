@@ -5,9 +5,12 @@ import { Header } from "./book-return/components/Header";
 import { InfoBox } from "./book-return/components/Info";
 import { Footer } from "./book-return/components/Footer";
 import { DropBox } from "./book-return/components/Dropbox";
+import { useTranslations } from "next-intl";
 
 
 const BookReturnPage: React.FC = () => {
+    const t = useTranslations("ContactInfo");
+
   return (
     <main className="min-h-screen bg-gray-50">
       <Header />
@@ -17,8 +20,9 @@ const BookReturnPage: React.FC = () => {
       <section className="p-6 md:p-12 max-w-6xl mx-auto">
 
         <h2 className="text-center text-2xl md:text-4xl font-extrabold mb-10">
-          Welcome! <br />
-          Return Your Books Anytime
+          {/* Welcome! <br />
+          Return Your Books Anytime */}
+             {t("h1")}
         </h2>
 
         <DropBox />
