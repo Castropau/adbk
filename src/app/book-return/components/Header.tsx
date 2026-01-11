@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { StatusItem } from "./StatusBar";
 import { useRouter } from "next/navigation";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 // import { StatusItem } from "./StatusItem";
 const FlagEn = () => (
   <svg
@@ -271,7 +272,7 @@ export const Header: React.FC = () => {
       </div>
       <h1 className="font-bold text-lg md:text-2xl">Book Return</h1>
     </div>
-  <div className="relative" ref={dropdownRef}>
+  {/* <div className="relative" ref={dropdownRef}>
           <span className="text-sm flex justify-center">Language</span>
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -310,7 +311,8 @@ export const Header: React.FC = () => {
               ))}
             </div>
           )}
-        </div>
+        </div> */}
+        <LanguageSwitcher  />
     {/* Right: Buttons */}
      {mobileMenuOpen && (
     <div className="flex items-center gap-3 md:gap-6 text-sm md:text-base">
