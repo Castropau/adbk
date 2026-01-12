@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export const LoginFooter: React.FC = () => {
@@ -18,19 +19,39 @@ export const LoginFooter: React.FC = () => {
       "
     >
       {/* Left */}
-      <div className="flex justify-center sm:justify-start w-full sm:w-auto">
-        <button
-          className="
-            bg-blue-400 hover:bg-blue-500 transition
-            px-4 py-2
-            rounded-md
-            font-semibold
-            w-full sm:w-auto
-          "
-        >
-          ⬅️ Back
-        </button>
-      </div>
+     <div className="flex justify-between w-full sm:w-auto gap-4">
+  {/* Back Button */}
+  <Link href="/" passHref>
+    <button
+      className="
+        bg-blue-400 hover:bg-blue-500 transition
+        px-4 py-2
+        rounded-md
+        font-semibold
+        w-full sm:w-auto
+        text-white
+      "
+    >
+      ⬅️ Back
+    </button>
+  </Link>
+  </div>
+      {/* <div className="flex justify-center sm:justify-end w-full sm:w-auto">
+  <Link
+    href="./"  // <-- replace with your route
+    className="
+      bg-green-400 hover:bg-green-500 transition
+      px-4 py-2
+      rounded-md
+      font-semibold
+      w-full sm:w-auto
+      text-white text-center
+      inline-block
+    "
+  >
+    Next ➡️
+  </Link>
+  </div> */}
 
       {/* Right */}
       <div className="flex justify-center sm:justify-end w-full sm:w-auto">

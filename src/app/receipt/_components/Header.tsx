@@ -6,7 +6,7 @@ export const Header: React.FC = () => {
       <div className="flex justify-between items-center mb-2">
         <div className="flex items-center gap-2 md:gap-4">
           <div className="bg-white rounded p-1">📚</div>
-          <h1 className="font-bold text-lg md:text-2xl">Transaction Complete</h1>
+          <h1 className="font-bold text-lg md:text-2xl">Receipt Options</h1>
         </div>
       </div>
 

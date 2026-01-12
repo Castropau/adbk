@@ -1,3 +1,32 @@
+// import React from "react";
+
+// export const FooterBox: React.FC = () => {
+//   return (
+//     <footer
+//       className="
+//         w-full
+//         bg-[#2c3e50] text-white
+//         flex flex-col justify-center
+//         px-4 sm:px-6 md:px-10 lg:px-12
+//         py-4 sm:py-5 md:py-6 lg:py-7
+//         text-xs sm:text-sm md:text-base lg:text-lg
+//         gap-2
+
+//         /* Footer positioning */
+//         fixed bottom-0 left-0 z-50
+//         shadow-lg
+//       "
+//     >
+//       {/* Status text */}
+//       <div className="flex items-center gap-2">
+//         <span className="animate-pulse">🔄</span>
+//         <span className="leading-snug">
+//           Processing... Please wait
+//         </span>
+//       </div>
+//     </footer>
+//   );
+// };
 import React from "react";
 
 export const FooterBox: React.FC = () => {
@@ -7,19 +36,16 @@ export const FooterBox: React.FC = () => {
         w-full
         bg-[#2c3e50] text-white
         flex flex-col justify-center
-        px-4 sm:px-6 md:px-10 lg:px-12
-        py-4 sm:py-5 md:py-6 lg:py-7
-        text-xs sm:text-sm md:text-base lg:text-lg
-        gap-2
-
-        /* Footer positioning */
+        px-8 md:px-12 lg:px-16
+        py-6 md:py-8 lg:py-10
+        text-lg md:text-xl lg:text-2xl
+        gap-3
         fixed bottom-0 left-0 z-50
         shadow-lg
       "
     >
-      {/* Status text */}
-      <div className="flex items-center gap-2">
-        <span className="animate-pulse">🔄</span>
+      <div className="flex items-center gap-3">
+        <span className="animate-pulse text-2xl">🔄</span>
         <span className="leading-snug">
           Processing... Please wait
         </span>
@@ -27,3 +53,4 @@ export const FooterBox: React.FC = () => {
     </footer>
   );
 };
+

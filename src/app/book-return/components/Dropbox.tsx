@@ -2,7 +2,7 @@ import React from "react";
 
 export const DropBox: React.FC = () => {
   return (
- <div className="border-4 border-dashed border-blue-600 rounded-xl p-10 md:p-20 text-center text-white select-none
+ <div className="mb-4 border-4 border-dashed border-blue-600 rounded-xl p-10 md:p-20 text-center text-white select-none
                 bg-[linear-gradient(135deg,_rgb(30,58,95)_0%,_rgb(44,95,158)_100%)]">
   <div className="text-6xl mb-8 animate-bounce">
    📥

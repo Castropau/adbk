@@ -28,11 +28,11 @@ const ReceiptOptions: React.FC = () => {
   ];
 
   return (
-    <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8 px-6 md:px-0">
+    <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-10 px-6 md:px-0">
       {options.map(({ icon, title, subtitle, iconColor }, idx) => (
         <div
           key={idx}
-          className="border border-gray-300 rounded-lg p-8 flex flex-col items-center text-center cursor-pointer hover:shadow-lg transition min-h-[220px]"
+          className="border border-gray-300 rounded-xl p-10 flex flex-col items-center text-center cursor-pointer hover:shadow-2xl transition-all min-h-[280px]"
           role="button"
           tabIndex={0}
           onKeyDown={(e) => {
@@ -42,13 +42,13 @@ const ReceiptOptions: React.FC = () => {
           }}
         >
           <span
-            className={`text-6xl mb-5 select-none ${iconColor ? iconColor : ""}`}
+            className={`text-7xl md:text-8xl mb-6 select-none ${iconColor ? iconColor : ""}`}
             aria-hidden="true"
           >
             {icon}
           </span>
-          <h3 className="font-semibold text-xl md:text-2xl">{title}</h3>
-          <p className="text-gray-600 text-base mt-2">{subtitle}</p>
+          <h3 className="font-semibold text-2xl md:text-3xl">{title}</h3>
+          <p className="text-gray-600 text-lg mt-2">{subtitle}</p>
         </div>
       ))}
     </div>
